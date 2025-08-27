@@ -8,7 +8,7 @@ function Hero() {
       <div className="round-image-container">
         <img src={komal} alt="Komal" className="round-image" />
       </div>  
-      <h1><span>I am Komal Deshmukh </span>Full stack developer based in India</h1>git 
+      <h1><span>I am Komal Deshmukh </span>Full stack developer based in India</h1>
       <div className="hero-action">
         <div className="hero-connect">Connect with me</div>
         <a 
