@@ -45,6 +45,7 @@
     border-radius:50px;
     border:2px solid #fff;
     cursor:pointer;
+    
 }
 
 .hero-connect:hover{
@@ -53,4 +54,87 @@ border:2px solid white;
 
 .hero-resume:hover{
     border-color:#d45297;
+}
+.hero-resume {
+  color: #fff;
+  text-decoration: none;
+}
+/* Tablets and small devices */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+    width: 90%;
+  }
+
+  .hero h1 span {
+    font-size: inherit; /* keeps gradient text proportional */
+  }
+
+  .hero p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  .hero-resume {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+  .hero-connect {
+    display: none; /* still hidden on very small screens */
+  }
+
+  .round-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .round-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+
+/* Extra small devices: phones */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 28px;
+    width: 95%;
+  }
+
+  .hero p {
+    width: 95%;
+    font-size: 16px;
+  
+  
+  
+    line-height: 24px;
+  }
+
+  .hero-action {
+    gap: 10px;
+  }
+
+  .hero-connect {
+    display: none; /* still hidden on very small screens */
+  }
+
+  
+  .hero-resume {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  .round-image-container {
+    width: 150px;
+    height: 150px;
+  }
 }

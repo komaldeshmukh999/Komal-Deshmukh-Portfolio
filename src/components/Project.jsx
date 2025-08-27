@@ -10,11 +10,15 @@ function MyWork() {
         <h1>My Projects</h1>
         <img src={theme_pattern} alt=""/>
       </div>
-      <div className="mywork-container">
-        {mywork_data.map((worker,index)=>{
-       return <img key={index} src={worker.w_img}/>
-        })}
-      </div>
+     <div className="mywork-container">
+  {mywork_data.map((worker, index) => {
+    return (
+      <a key={index} href={worker.w_link} target="_blank" rel="noopener noreferrer">
+        <img src={worker.w_img} alt={`Project ${index + 1}`} />
+      </a>
+    )
+  })}
+</div>
      <div className="mywork-showmore">
        <p>
         Show More

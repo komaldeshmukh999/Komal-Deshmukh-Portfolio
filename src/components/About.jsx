@@ -17,9 +17,22 @@ function About() {
      </div>
      <div className="about-right">
         <div className="about-para">
-            <p>I am a experinece Full stack developer Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dicta, perspiciatis voluptate iste aliquid officia, a illum, repellat numquam voluptates saepe eos laudantium doloremque. Maxime debitis expedita delectus a ut.
-
-            </p>
+            <p>
+    Hi, I’m <strong>Komal Deshmukh</strong>, a passionate front-end developer with a strong
+    foundation in modern web technologies. I specialize in building clean,
+    responsive, and user-friendly web applications.
+  </p>
+  <p>
+    My core skills include <strong>HTML</strong>, <strong>CSS</strong>, 
+    <strong> JavaScript</strong>, <strong>React.js</strong>, and 
+    <strong> Tailwind CSS</strong>. I enjoy turning creative ideas into functional
+    interfaces and continuously improving my skills to stay updated with
+    the latest trends in web development.
+  </p>
+  <p>
+    Beyond coding, I love solving challenges, experimenting with new tools,
+    and working on projects that make a meaningful impact.
+  </p>
         </div>
      </div>
      

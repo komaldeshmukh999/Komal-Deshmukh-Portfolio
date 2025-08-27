@@ -12,7 +12,7 @@
 .about-title h1{
     padding:0px 30px;
     font-size:80px;
-    font-weight:900;
+    font-weight:600;
 }
 .about-title img{
     position:absolute;
@@ -28,6 +28,7 @@
     display:flex;
     flex-direction:column;
     gap:80px;
+    align-items: center;
 }
 .about-para{
     display:flex;
@@ -62,3 +63,110 @@
     border-radius:50px;
     background:linear-gradient(200deg, #DF8908 -5.09%,#d03ea2 106.28%);
 }
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;  /* slightly smaller for better balance */
+  font-weight: 400; /* lighter for readability */
+  line-height: 1.8; /* adds breathing space between lines */
+  color: #e5e5e5;   /* softer white for less eye strain */
+  text-align: justify; /* clean block alignment */
+  max-width: 600px; /* keep paragraph narrower */
+}
+.about-para strong {
+  color: #DF8908; /* highlight skills nicely */
+  font-weight: 600;
+}
+.about-right {
+  align-items: flex-start; /* align text to left instead of center */
+  gap: 40px;
+}
+.about-left img {
+  width: 280px;       /* fixed width */
+  height: 320px;      /* fixed height */
+  object-fit: cover;  /* crops instead of stretching */
+  border-radius: 12px; /* rounded corners for modern look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* subtle shadow */
+}
+
+/* Small devices: phones */
+
+/* Small devices: tablets and phones */
+@media (max-width: 768px) {
+  .about {
+    margin: 50px 20px;
+    gap: 30px;
+  }
+
+  .about-title h1 {
+    font-size: 50px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .about-title img {
+    max-width: 80%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .about-sections {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* center image and text */
+  }
+
+  .about-left {
+    display: flex;
+    justify-content: center; /* center the image horizontally */
+  }
+
+  .about-left img {
+    width: 220px;
+    height: 250px;
+  }
+
+  .about-right {
+    align-items: center; /* center text */
+    gap: 20px;
+  }
+
+  .about-para {
+    font-size: 16px;
+    max-width: 90%;  /* keep text within screen */
+    line-height: 1.8;
+    text-align: center; /* center for mobile */
+  }
+
+  .about-para strong {
+    color: #DF8908; 
+    font-weight: 600;
+  }
+}
+
+/* Extra small devices: very small phones */
+@media (max-width: 480px) {
+  .about-title h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .about-left img {
+    width: 180px;
+    height: 200px;
+  }
+
+  .about-para {
+    font-size: 14px;
+    max-width: 95%;
+    gap: 15px;
+  }
+
+  .about-sections {
+    gap: 20px;
+  }
+}
+
